@@ -114,7 +114,6 @@ async def start(client, message):
     deep_link = message.text.split(None, 1)[1]
     def_url = f"https://t.me/{temp.U_NAME}?start={deep_link}"
     status = await ForceSub(client, message, file_id=def_url)
-    if not status:
 
     data = message.command[1]
     try:
